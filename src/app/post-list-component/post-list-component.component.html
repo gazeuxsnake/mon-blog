@@ -1,0 +1,8 @@
+<h2><b>{{ title }}</b></h2>
+<ul class="list-group">
+  <app-post-list-item-component *ngFor="let post of postList"
+                                [postTitle]="post.title"
+                                [postContent]="post.content"
+                                [postLoveIts]="post.loveIts"
+                                [postCreatedAt]="post.created_at"></app-post-list-item-component>
+</ul>
